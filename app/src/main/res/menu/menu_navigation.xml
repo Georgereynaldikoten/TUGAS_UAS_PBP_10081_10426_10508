@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="Chat"/>
+
+    <item android:id="@+id/menu_artikel"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Artikel"/>
+
+    <item android:id="@+id/menu_profil"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profil"/>
+
+</menu>

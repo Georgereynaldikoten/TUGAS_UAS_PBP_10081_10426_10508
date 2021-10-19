@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailDokter">
+
+    <ImageView
+        android:id="@+id/photo_dokter"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dokter"
+        android:layout_marginTop="-23dp"/>
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/arrow_back"
+            android:layout_marginTop="150dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/nama_dokter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA DOKTER"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"/>
+
+            <TextView
+                android:id="@+id/spesialis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPESIALIS"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMOR STR"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="331112001235"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JADWAL CHAT"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPAT PRAKTIK"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RS PANTI RAPIH YOGYAKARTA"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_detail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Konsultasi"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 35.000"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#FF5C00"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button_chat"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="210dp"
+            android:backgroundTint="#FF5C00"
+            android:text="Chat Sekarang"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

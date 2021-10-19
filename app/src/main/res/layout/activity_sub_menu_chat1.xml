@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subMenuChat1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_judul"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Chat"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="38dp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_detail"
+        android:layout_width="330dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_judul">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dokter"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAMA DOKTER"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPESIALIS"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="80dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/check"
+            android:scaleType="fitXY"
+            android:layout_marginTop="78dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respon cepat dengan akses prioritas"
+            android:layout_marginTop="78dp"
+            android:layout_marginStart="80dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/check"
+            android:scaleType="fitXY"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaminan privasi di setiap pertanyaan"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="80dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/check"
+            android:scaleType="fitXY"
+            android:layout_marginTop="132dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar mudah dan cepat. Tersedia berbagai metode pembayaran (kartu kredit, gopay, OVO)"
+            android:layout_marginTop="132dp"
+            android:layout_marginStart="80dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_ketentuan"
+        android:layout_width="330dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_detail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketentuan Penggunaan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas ini bisa memberi diagnosis awal untuk kondisi
+            pengguna. Chat di aplikasi tidak bisa menggantikan interaksifisik dokter. Dokter akan meresepkan obat sesuai aturan
+            berdasar informasi dari pengguna. Pada kondisi darurat, temui dokter langsung."
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="130dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_ketentuan">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Konsultasi"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 35.000"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#FF5C00"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="210dp"
+            android:backgroundTint="#FF5C00"
+            android:text="Chat Sekarang"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

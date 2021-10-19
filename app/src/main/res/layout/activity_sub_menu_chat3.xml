@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subMenuChat1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_judul"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="13dp"
+            android:text="Metode Pembayaran"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_detail"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_judul">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dokter"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAMA DOKTER"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPESIALIS"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="80dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_harga"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_detail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Pembayaran"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Konsultasi"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 50.000"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="250dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon HaloSehat"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#0000FF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 15.000"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="250dp"
+            android:textColor="#0000FF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 35.000"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="250dp"
+            android:textColor="#FF5C00"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_gopay"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_harga">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/GoPay"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go-Pay"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="100dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_navigate_next_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_ovo"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_gopay">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ovo"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ovo"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="100dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_navigate_next_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_bni"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/layout_ovo">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bni"
+            android:scaleType="fitXY"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BNI"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="100dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_navigate_next_24" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
