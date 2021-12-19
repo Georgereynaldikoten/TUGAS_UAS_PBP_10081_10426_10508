@@ -13,7 +13,8 @@
         android:layout_height="250dp"
         android:scaleType="fitXY"
         android:src="@drawable/dokter"
-        android:layout_marginTop="-23dp"/>
+        android:layout_marginTop="-23dp" />
+
 
     <ImageView
         android:id="@+id/arrow_back"
@@ -26,7 +27,7 @@
     <LinearLayout
         android:id="@+id/layout_detail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="531dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
@@ -37,93 +38,104 @@
             android:elevation="10dp">
 
             <TextView
-                android:id="@+id/nama_dokter"
+                android:id="@+id/tv_nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NAMA DOKTER"
-                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="-10dp"/>
+                android:layout_marginTop="-10dp"
+                android:hint="NAMA DOKTER"
+                android:textAlignment="center" />
 
             <TextView
-                android:id="@+id/spesialis"
+                android:id="@+id/tv_spesialis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SPESIALIS"
-                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:hint="SPESIALIS"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="330dp"
+            android:layout_width="375dp"
             android:layout_height="80dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:elevation="10dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginStart="15dp">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
                 android:text="NOMOR STR"
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:layout_marginTop="-15dp"/>
+                android:textAlignment="center" />
 
             <TextView
+                android:id="@+id/tv_str"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="331112001235"
-                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:hint="331112001235"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="330dp"
+            android:layout_width="375dp"
             android:layout_height="80dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:elevation="10dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginStart="15dp">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
                 android:text="JADWAL CHAT"
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:layout_marginTop="-15dp"/>
+                android:textAlignment="center" />
 
+            <TextView
+                android:id="@+id/tv_jadwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="JADWAL CHAT"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="330dp"
-            android:layout_height="80dp"
+            android:layout_width="375dp"
+            android:layout_height="94dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:elevation="10dp"
-            app:cardCornerRadius="10dp"
-            android:layout_marginStart="15dp">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
                 android:text="TEMPAT PRAKTIK"
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:layout_marginTop="-15dp"/>
+                android:textAlignment="center" />
 
             <TextView
+                android:id="@+id/tv_praktik"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RS PANTI RAPIH YOGYAKARTA"
-                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:hint="RS PANTI RAPIH YOGYAKARTA"
+                android:textAlignment="center" />
 
         </androidx.cardview.widget.CardView>
 
@@ -132,37 +144,44 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="70dp"
-        android:elevation="10dp"
-        android:layout_below="@id/layout_detail">
+        android:layout_below="@id/layout_detail"
+        android:layout_marginTop="190dp"
+        android:elevation="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Biaya Konsultasi"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="20dp"
-            android:textStyle="bold"/>
+            android:text="Biaya Konsultasi"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rp 35.000"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Rp 35.000"
             android:textColor="#FF5C00"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_chat"
             android:layout_width="130dp"
             android:layout_height="60dp"
+            android:layout_marginStart="230dp"
             android:layout_marginTop="5dp"
-            android:layout_marginStart="210dp"
             android:backgroundTint="#FF5C00"
             android:text="Chat Sekarang"
             android:textSize="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="t"
+            android:visibility="invisible" />
 
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

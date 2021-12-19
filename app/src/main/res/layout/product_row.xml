@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="artikel"
+            type="com.example.uts1.entity.Artikel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:loadImage="@{artikel.gambar}"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/judulTextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@{artikel.judul}"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/TagTextView"
+            app:layout_constraintTop_toBottomOf="@+id/TagTextView"
+            />
+        <TextView
+            android:id="@+id/TagTextView"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@{artikel.tag}"
+            android:textSize="10dp"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
+            android:id="@+id/isiTextView"
+            android:layout_width="240dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="75dp"
+            android:text="@{artikel.isi}"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/judulTextView"
+            app:layout_constraintTop_toBottomOf="@+id/judulTextView" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

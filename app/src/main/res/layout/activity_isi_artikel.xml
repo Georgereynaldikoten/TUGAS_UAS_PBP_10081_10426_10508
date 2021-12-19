@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:src="@drawable/source2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="200dp"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/TagTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/TagTextView1"
+            />
+        <TextView
+            android:id="@+id/Tag"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="150dp"
+            android:textSize="10dp"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
+            android:id="@+id/isi"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="275dp"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/judulTextView"
+            app:layout_constraintTop_toBottomOf="@+id/judulTextView" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

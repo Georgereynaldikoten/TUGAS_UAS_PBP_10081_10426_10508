@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editNavbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_24"
+                app:tint="#F4B3B3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Kembali" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profilContent"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:foreground="@drawable/rounded"
+                    android:maxWidth="60dp"
+                    android:maxHeight="60dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_nama"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F4B3B3"
+                        android:textColor="#828282"                        android:hint="Nama"
+                         />
+
+                    <EditText
+                        android:id="@+id/et_noTelp"
+                        android:layout_width="250dp"
+                        android:backgroundTint="#F4B3B3"
+                        android:layout_height="wrap_content"
+                        android:hint="No Telp"
+                        android:textColor="#828282" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="10dp"
+                android:background="#828282" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="#828282" />
+
+            <EditText
+                android:id="@+id/et_jenisKelamin"
+                android:textSize="10dp"
+                android:backgroundTint="#F4B3B3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Jenis Kelamin"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="#828282" />
+            <EditText
+                android:id="@+id/et_alamat"
+                android:textSize="10dp"
+                android:backgroundTint="#F4B3B3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Alamat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#828282" />
+            <EditText
+                android:id="@+id/et_password"
+                android:textSize="10dp"
+                android:inputType="textPassword"
+                android:backgroundTint="#F4B3B3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Password" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#F4B3B3"
+        android:text="Selesai"
+        android:textColor="#fff" />
+
+
+
+</RelativeLayout>
